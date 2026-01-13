@@ -119,9 +119,13 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                 Voir le prix sur Amazon →
               </a>
 
-              <p className="text-xs text-gray-600 text-center mt-3 md:mt-4 font-medium" role="note">
-                ✨ Je m&apos;engage à comparer et vous trouver les meilleurs produits possible
-              </p>
+              <button 
+                onClick={onClose}
+                className="text-sm text-gray-600 text-center mt-3 md:mt-4 font-medium hover:text-orange-500 transition-colors w-full cursor-pointer" 
+                aria-label="Retour à la page d'accueil"
+              >
+                ← Retour à l&apos;accueil
+              </button>
             </div>
           </div>
         </div>
