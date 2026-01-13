@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://bureautique.com/sitemap.xml',
+    sitemap: 'https://bureaulink.com/sitemap.xml',
   }
 }

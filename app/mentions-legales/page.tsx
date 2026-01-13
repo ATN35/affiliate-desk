@@ -9,13 +9,13 @@ export default function MentionsLegales() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Éditeur du site</h2>
           <p className="text-gray-700 mb-2">
-            <strong>URL :</strong> bureautique.com
+            <strong>URL :</strong> bureaulink.com
           </p>
           <p className="text-gray-700 mb-4">
             <strong>Responsable de publication :</strong> Particulier
           </p>
           <p className="text-gray-700 mb-4 bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
-            <strong>📧 Contact :</strong> <a href="mailto:contact@bureautique.com" className="text-orange-500 hover:underline">contact@bureautique.com</a>
+            <strong>📧 Contact :</strong> <a href="mailto:contact.atn35@gmail.com" className="text-orange-500 hover:underline">contact.atn35@gmail.com</a>
             <br />
             <span className="text-sm text-gray-600 mt-2 block">
               Conformément à la loi pour la confiance dans l&apos;économie numérique (LCEN), 
@@ -62,7 +62,7 @@ export default function MentionsLegales() {
           </p>
           <p className="text-gray-700">
             Ce site collecte uniquement des données de navigation anonymisées via cookies. 
-            Pour toute demande : <a href="mailto:contact@bureautique.com" className="text-orange-500 hover:underline">contact@bureautique.com</a>
+            Pour toute demande : <a href="mailto:contact.atn35@gmail.com" className="text-orange-500 hover:underline">contact.atn35@gmail.com</a>
           </p>
         </section>
 

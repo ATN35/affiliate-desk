@@ -22,7 +22,7 @@ export default function PolitiqueConfidentialite() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Collecte des données</h2>
           <p className="text-gray-700 mb-4">
-            Bureautique collecte uniquement les données nécessaires au fonctionnement du site et à 
+            Bureaulink collecte uniquement les données nécessaires au fonctionnement du site et à 
             l&apos;amélioration de nos services.
           </p>
           <p className="text-gray-700">
@@ -140,7 +140,7 @@ export default function PolitiqueConfidentialite() {
           </div>
 
           <p className="text-gray-700">
-            Pour toute question ou demande : <a href="mailto:contact@bureautique.com" className="text-orange-500 hover:underline font-medium">contact@bureautique.com</a>
+            Pour toute question ou demande : <a href="mailto:contact.atn35@gmail.com" className="text-orange-500 hover:underline font-medium">contact.atn35@gmail.com</a>
           </p>
         </section>
 

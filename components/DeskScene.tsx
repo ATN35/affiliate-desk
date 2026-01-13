@@ -62,12 +62,12 @@ export default function DeskScene() {
           <div 
             className="w-10 h-10 md:w-11 md:h-11 bg-linear-to-br from-orange-400 via-orange-500 to-amber-500 rounded-xl flex items-center justify-center shadow-lg shadow-orange-500/30 ring-1 ring-white/20"
             role="img" 
-            aria-label="Logo Bureautique"
+            aria-label="Logo Bureaulink"
           >
             <span className="text-white text-xl md:text-2xl" aria-hidden="true">📋</span>
           </div>
           <div>
-            <h1 className="text-lg md:text-xl font-bold text-gray-900">Bureautique</h1>
+            <h1 className="text-lg md:text-xl font-bold text-gray-900">Bureaulink</h1>
             <p className="text-xs md:text-sm text-gray-600 hidden sm:block">Votre espace de travail idéal</p>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function DeskScene() {
           <Link
             href="/a-propos"
             className="text-gray-700 hover:text-orange-500 active:scale-95 transition-all focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded cursor-pointer text-sm sm:text-base"
-            aria-label="À propos de Bureautique"
+            aria-label="À propos de Bureaulink"
           >
             À propos
           </Link>

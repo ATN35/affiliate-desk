@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="flex flex-row justify-between items-center text-[9px] sm:text-xs">
           {/* Copyright - Left edge */}
           <p className="text-gray-400/70 whitespace-nowrap">
-            © {currentYear} Bureautique
+            © {currentYear} Bureaulink
           </p>
 
           {/* Links - Right edge */}

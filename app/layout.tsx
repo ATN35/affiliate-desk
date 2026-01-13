@@ -21,12 +21,12 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Bureautique - Découvrez chaque produit en contexte",
+  title: "Bureaulink - Découvrez chaque produit en contexte",
   description: "Site d'affiliation visuel avec une illustration interactive de bureau pour mettre en avant des produits affiliés dans leur contexte réel. Trouvez les meilleurs produits pour votre bureau.",
   keywords: ["affiliation", "produits bureau", "accessoires bureau", "équipement télétravail", "setup bureau", "recommandations produits"],
-  authors: [{ name: "Bureautique" }],
-  creator: "Bureautique",
-  publisher: "Bureautique",
+  authors: [{ name: "Bureaulink" }],
+  creator: "Bureaulink",
+  publisher: "Bureaulink",
   robots: {
     index: true,
     follow: true,

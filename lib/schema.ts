@@ -1,12 +1,12 @@
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Bureautique",
-  "url": "https://bureautique.com",
+  "name": "Bureaulink",
+  "url": "https://bureaulink.com",
   "description": "Découvrez les meilleurs produits pour votre bureau dans leur contexte réel",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://bureautique.com/?q={search_term_string}",
+    "target": "https://bureaulink.com/?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 };
@@ -14,12 +14,12 @@ export const websiteSchema = {
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Bureautique",
-  "url": "https://bureautique.com",
-  "logo": "https://bureautique.com/logo.png",
+  "name": "Bureaulink",
+  "url": "https://bureaulink.com",
+  "logo": "https://bureaulink.com/logo.png",
   "contactPoint": {
     "@type": "ContactPoint",
-    "email": "contact@bureautique.com",
+    "email": "contact.atn35@gmail.com",
     "contactType": "Customer Service"
   }
 };

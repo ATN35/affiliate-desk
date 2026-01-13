@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'À propos - Bureautique',
-  description: 'Découvrez Bureautique, votre guide pour créer l\'espace de travail parfait avec les meilleurs produits sélectionnés.',
+  title: 'À propos - Bureaulink',
+  description: 'Découvrez Bureaulink, votre guide pour créer l\'espace de travail parfait avec les meilleurs produits sélectionnés.',
 };
 
 export default function APropos() {
@@ -40,7 +40,7 @@ export default function APropos() {
               <span className="text-white text-lg sm:text-xl md:text-2xl">📋</span>
             </div>
             <div>
-              <h1 className="text-base sm:text-lg md:text-xl font-bold text-gray-900">Bureautique</h1>
+              <h1 className="text-base sm:text-lg md:text-xl font-bold text-gray-900">Bureaulink</h1>
               <p className="text-[10px] sm:text-xs md:text-sm text-gray-600 hidden sm:block">Votre espace de travail idéal</p>
             </div>
           </Link>
@@ -61,7 +61,7 @@ export default function APropos() {
             <span className="text-orange-600 font-medium text-sm sm:text-base">Notre histoire</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight font-playfair">
-            À propos de Bureautique
+            À propos de Bureaulink
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Votre guide pour créer l&apos;espace de travail parfait
@@ -142,10 +142,10 @@ export default function APropos() {
           </div>
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm sm:text-base">
             <p>
-              Bureautique participe au Programme Partenaires d&apos;Amazon EU, qui nous permet de percevoir une rémunération via les liens vers Amazon.fr.
+              Bureaulink participe au Programme Partenaires d&apos;Amazon EU, qui nous permet de percevoir une rémunération via les liens vers Amazon.fr.
             </p>
             <p className="text-sm sm:text-base text-gray-600">
-              En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats qualifiés, sans frais supplémentaires pour vous. Cette commission aide à maintenir et améliorer Bureautique.
+              En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats qualifiés, sans frais supplémentaires pour vous. Cette commission aide à maintenir et améliorer Bureaulink.
             </p>
           </div>
         </div>
@@ -166,7 +166,7 @@ export default function APropos() {
       <footer className="absolute bottom-0 left-0 right-0 z-10 py-4">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="flex flex-row justify-between items-center text-[9px] sm:text-xs text-gray-400/70">
-            <p>© {new Date().getFullYear()} Bureautique. Tous droits réservés.</p>
+            <p>© {new Date().getFullYear()} Bureaulink. Tous droits réservés.</p>
             <div className="flex gap-4 md:gap-6">
               <Link href="/mentions-legales" className="hover:text-orange-500 active:scale-95 transition-all">
                 Mentions légales
