@@ -41,10 +41,10 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         onClick={(e) => e.stopPropagation()}
         role="document"
       >
-        {/* Close Button */}
+        {/* Close Button - Sticky on Mobile */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 sm:top-3 sm:right-3 md:top-4 md:right-4 z-20 w-9 h-9 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-white sm:bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors group shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 cursor-pointer"
+          className="sticky sm:absolute top-0 right-0 sm:top-3 sm:right-3 md:top-4 md:right-4 z-20 w-12 h-12 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-none sm:rounded-full bg-white sm:bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors group shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 cursor-pointer"
           aria-label="Fermer la fenêtre de détails du produit"
         >
           <svg 
@@ -59,9 +59,9 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
         <div className="grid md:grid-cols-2 gap-0 overflow-y-auto">
           {/* Image Section - Modern Clean Design */}
-          <div className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50/50 p-6 pt-12 sm:pt-6 md:p-10 flex items-center justify-center overflow-hidden min-h-[400px] sm:min-h-[450px] md:min-h-[500px]">
-            {/* Category Badge - Adjusted for mobile */}
-            <div className="absolute top-14 left-4 sm:top-4 sm:left-4 md:top-6 md:left-6 bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wide shadow-lg z-10">
+          <div className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50/50 p-4 pt-16 sm:pt-6 md:p-10 flex items-center justify-center overflow-hidden min-h-[400px] sm:min-h-[450px] md:min-h-[500px]">
+            {/* Category Badge - Always at top, never overlapping image */}
+            <div className="absolute top-3 left-1/2 -translate-x-1/2 sm:top-4 sm:left-4 sm:translate-x-0 md:top-6 md:left-6 bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wide shadow-lg z-10">
               {product.category}
             </div>
             
