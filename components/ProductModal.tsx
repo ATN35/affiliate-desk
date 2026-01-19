@@ -108,7 +108,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
           {/* Content Section - Better Spacing */}
           <div className="p-5 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-between h-[60vh] sm:h-auto overflow-y-auto sm:overflow-visible">
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-2.5 sm:space-y-4">
               <h2 
                 id="modal-title" 
                 className="text-base sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight line-clamp-2"
@@ -124,7 +124,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               </p>
 
               {/* Features List - Better Spacing */}
-              <div className="space-y-2 sm:space-y-2 md:space-y-3" role="list" aria-label="Points forts du produit">
+              <div className="space-y-1.5 sm:space-y-2 md:space-y-3" role="list" aria-label="Points forts du produit">
                 <h3 className="font-semibold text-gray-900 text-xs sm:text-base">Points forts :</h3>
                 <div className="flex items-start gap-2 sm:gap-2 md:gap-3" role="listitem">
                   <span className="text-orange-500 text-sm sm:text-base shrink-0" aria-hidden="true">✓</span>
@@ -141,8 +141,8 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               </div>
             </div>
 
-            {/* CTA - Proper Spacing */}
-            <div className="mt-4 space-y-2 sm:space-y-3">
+            {/* CTA - Reduced Gap */}
+            <div className="mt-2 sm:mt-4 space-y-2 sm:space-y-3">
               <a
                 href={product.affiliateLink}
                 target="_blank"
