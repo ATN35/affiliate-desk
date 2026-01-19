@@ -82,13 +82,21 @@ export default function MentionsLegales() {
           </p>
         </section>
 
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <Link 
-            href="/" 
-            className="inline-flex items-center text-orange-500 hover:text-orange-600 font-medium"
-          >
-            ← Retour à l&apos;accueil
-          </Link>
+        <div className="mt-12 pt-8 border-t-2 border-gray-200">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <Link 
+              href="/" 
+              className="inline-flex items-center text-orange-500 hover:text-orange-600 font-medium transition-colors"
+            >
+              ← Retour à l&apos;accueil
+            </Link>
+            <Link 
+              href="/politique-confidentialite" 
+              className="inline-flex items-center text-gray-600 hover:text-gray-900 text-sm transition-colors"
+            >
+              Voir aussi : Politique de confidentialité →
+            </Link>
+          </div>
         </div>
       </div>
     </main>

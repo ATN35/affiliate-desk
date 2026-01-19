@@ -111,32 +111,32 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             <div>
               <h2 
                 id="modal-title" 
-                className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 sm:mb-3 md:mb-4 line-clamp-2"
+                className="text-base sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 sm:mb-3 md:mb-4 line-clamp-2"
               >
                 {product.name}
               </h2>
               
               <p 
                 id="modal-description" 
-                className="text-sm sm:text-base md:text-lg text-gray-600 mb-3 sm:mb-5 md:mb-6 leading-snug sm:leading-relaxed line-clamp-3 sm:line-clamp-none"
+                className="text-xs sm:text-base md:text-lg text-gray-600 mb-2 sm:mb-5 md:mb-6 leading-snug sm:leading-relaxed line-clamp-2 sm:line-clamp-none"
               >
                 {product.description}
               </p>
 
-              {/* Features List - Hidden on small mobile */}
-              <div className="hidden sm:block mb-6 md:mb-8 space-y-2 md:space-y-3" role="list" aria-label="Points forts du produit">
-                <h3 className="font-semibold text-gray-900 mb-2 md:mb-3">Points forts :</h3>
-                <div className="flex items-start gap-2 md:gap-3" role="listitem">
-                  <span className="text-orange-500 mt-1" aria-hidden="true">✓</span>
-                  <span className="text-sm md:text-base text-gray-600">Design moderne et élégant</span>
+              {/* Features List - Compact on Mobile */}
+              <div className="mb-3 sm:mb-6 md:mb-8 space-y-1 sm:space-y-2 md:space-y-3" role="list" aria-label="Points forts du produit">
+                <h3 className="font-semibold text-gray-900 mb-1 sm:mb-2 md:mb-3 text-xs sm:text-base">Points forts :</h3>
+                <div className="flex items-start gap-1.5 sm:gap-2 md:gap-3" role="listitem">
+                  <span className="text-orange-500 text-xs sm:text-base mt-0.5" aria-hidden="true">✓</span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-600">Design moderne et élégant</span>
                 </div>
-                <div className="flex items-start gap-2 md:gap-3" role="listitem">
-                  <span className="text-orange-500 mt-1" aria-hidden="true">✓</span>
-                  <span className="text-sm md:text-base text-gray-600">Qualité professionnelle</span>
+                <div className="flex items-start gap-1.5 sm:gap-2 md:gap-3" role="listitem">
+                  <span className="text-orange-500 text-xs sm:text-base mt-0.5" aria-hidden="true">✓</span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-600">Qualité professionnelle</span>
                 </div>
-                <div className="flex items-start gap-2 md:gap-3" role="listitem">
-                  <span className="text-orange-500 mt-1" aria-hidden="true">✓</span>
-                  <span className="text-sm md:text-base text-gray-600">Recommandé par notre équipe</span>
+                <div className="flex items-start gap-1.5 sm:gap-2 md:gap-3" role="listitem">
+                  <span className="text-orange-500 text-xs sm:text-base mt-0.5" aria-hidden="true">✓</span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-600">Recommandé par notre équipe</span>
                 </div>
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                 href={product.affiliateLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-linear-to-r from-orange-500 to-amber-500 text-white text-center py-2.5 sm:py-3 md:py-4 rounded-lg sm:rounded-xl md:rounded-2xl font-semibold text-sm sm:text-base md:text-lg hover:shadow-xl hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-orange-500 focus:ring-offset-2"
+                className="block w-full bg-linear-to-r from-orange-500 to-amber-500 text-white text-center py-2 sm:py-3 md:py-4 rounded-lg sm:rounded-xl md:rounded-2xl font-semibold text-xs sm:text-base md:text-lg hover:shadow-xl hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-orange-500 focus:ring-offset-2"
                 aria-label={`Voir ${product.name} sur Amazon - Nouvelle fenêtre`}
               >
                 Voir le prix sur Amazon →
@@ -155,7 +155,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
               <button 
                 onClick={onClose}
-                className="text-xs sm:text-sm text-gray-600 text-center mt-2 sm:mt-3 md:mt-4 font-medium hover:text-orange-500 transition-colors w-full cursor-pointer" 
+                className="text-xs sm:text-sm text-gray-600 text-center mt-1.5 sm:mt-3 md:mt-4 font-medium hover:text-orange-500 transition-colors w-full cursor-pointer" 
                 aria-label="Retour à la page d'accueil"
               >
                 ← Retour à l&apos;accueil
