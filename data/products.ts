@@ -45,7 +45,7 @@ export const products: Product[] = [
     affiliateLink: 'https://amzn.to/49ZhVRA',
     image: '/Lampe-de-bureau.jpg',
     position: { x: 74, y: 30 },
-    positionMobile: { x: 88, y: 30 },
+    positionMobile: { x: 86, y: 30 },
     positionTablet: { x: 76, y: 28 },
     positionIpadPro: { x: 74, y: 30 }
   },
@@ -69,7 +69,7 @@ export const products: Product[] = [
     affiliateLink: 'https://amzn.to/4pHRMLL',
     image: '/Plant.jpg',
     position: { x: 62, y: 38 },
-    positionMobile: { x: 69, y: 37 },
+    positionMobile: { x: 66, y: 37 },
     positionTablet: { x: 64, y: 40 },
     positionIpadPro: { x: 64, y: 42 }
   },
@@ -93,7 +93,7 @@ export const products: Product[] = [
     affiliateLink: 'https://amzn.to/4bGuxOP',
     image: '/Mug.jpg',
     position: { x: 30, y: 90 },
-    positionMobile: { x: 20, y: 63 },
+    positionMobile: { x: 26, y: 63 },
     positionTablet: { x: 26, y: 76 },
     positionIpadPro: { x: 28, y: 72 }
   },
