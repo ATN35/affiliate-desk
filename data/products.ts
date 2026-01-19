@@ -45,7 +45,7 @@ export const products: Product[] = [
     affiliateLink: 'https://amzn.to/49ZhVRA',
     image: '/Lampe-de-bureau.jpg',
     position: { x: 74, y: 30 },
-    positionMobile: { x: 86, y: 30 },
+    positionMobile: { x: 80, y: 30 },
     positionTablet: { x: 76, y: 28 },
     positionIpadPro: { x: 74, y: 30 }
   },
