@@ -29,7 +29,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-3 md:p-4 bg-black/60 backdrop-blur-sm animate-fade-in overflow-y-auto"
+      className="fixed inset-0 z-50 flex items-center justify-center p-0 sm:p-3 md:p-4 bg-black/60 backdrop-blur-sm animate-fade-in overflow-y-auto"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -37,7 +37,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
       aria-describedby="modal-description"
     >
       <div 
-        className="relative bg-white rounded-t-2xl sm:rounded-2xl md:rounded-3xl shadow-2xl max-w-4xl w-full overflow-hidden animate-scale-in max-h-[95vh] sm:max-h-[90vh] md:max-h-none sm:my-4 md:my-0 flex flex-col"
+        className="relative bg-white rounded-2xl md:rounded-3xl shadow-2xl max-w-4xl w-full overflow-hidden animate-scale-in max-h-[95vh] sm:max-h-[90vh] my-4 flex flex-col"
         onClick={(e) => e.stopPropagation()}
         role="document"
       >
@@ -59,9 +59,9 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
         <div className="grid md:grid-cols-2 gap-0 overflow-y-auto">
           {/* Image Section - Modern Clean Design */}
-          <div className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50/50 p-6 md:p-10 flex items-center justify-center overflow-hidden">
-            {/* Category Badge - Top Left */}
-            <div className="absolute top-6 left-6 bg-orange-500 text-white px-4 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wide shadow-lg z-10">
+          <div className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50/50 p-6 md:p-10 flex items-center justify-center overflow-hidden min-h-[400px] sm:min-h-[450px] md:min-h-[500px]">
+            {/* Category Badge - Adjusted for mobile */}
+            <div className="absolute top-2 left-2 sm:top-4 sm:left-4 md:top-6 md:left-6 bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wide shadow-lg z-10">
               {product.category}
             </div>
             
