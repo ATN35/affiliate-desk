@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { websiteSchema, organizationSchema } from "@/lib/schema";
@@ -51,11 +51,12 @@ export const metadata: Metadata = {
     title: 'DeskPick - Découvrez chaque produit en contexte',
     description: 'Site d\'affiliation visuel pour découvrir des produits de bureau',
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
   themeColor: '#f97316',
 };
 

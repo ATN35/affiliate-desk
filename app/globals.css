@@ -200,5 +200,12 @@ body.modal-open {
   outline-offset: 2px;
 }
 
-
-
+/* Shimmer animation for dynamic effect */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

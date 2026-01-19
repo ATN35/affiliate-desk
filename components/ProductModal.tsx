@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import Image from 'next/image';
 import { Product } from '@/types/product';
 
 interface ProductModalProps {
@@ -57,17 +58,50 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         </button>
 
         <div className="grid md:grid-cols-2 gap-0 overflow-y-auto">
-          {/* Image Section */}
-          <div className="relative bg-linear-to-br from-orange-100 to-amber-100 p-8 md:p-12 flex items-center justify-center min-h-64 md:min-h-100">
-            <div className="relative w-full aspect-square max-w-sm">
-              {/* Placeholder image - remplacer par vos vraies images */}
-              <div className="absolute inset-0 bg-linear-to-br from-orange-200 to-amber-200 rounded-2xl flex items-center justify-center shadow-xl">
-                <span className="text-5xl md:text-6xl opacity-50">📦</span>
+          {/* Image Section - Modern Clean Design */}
+          <div className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50/50 p-6 md:p-10 flex items-center justify-center overflow-hidden">
+            {/* Category Badge - Top Left */}
+            <div className="absolute top-6 left-6 bg-orange-500 text-white px-4 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wide shadow-lg z-10">
+              {product.category}
+            </div>
+            
+            {/* Product Image with Sunburst Effect */}
+            <div className="relative w-full max-w-md aspect-square flex items-center justify-center">
+              {/* Sunburst rays background - Rounded */}
+              <div className="absolute inset-0 flex items-center justify-center rounded-full overflow-hidden">
+                <div className="absolute w-full h-full opacity-30 rounded-full" style={{
+                  background: `repeating-conic-gradient(
+                    from 0deg,
+                    transparent 0deg 3deg,
+                    rgba(249, 115, 22, 0.15) 3deg 6deg,
+                    transparent 6deg 9deg,
+                    rgba(251, 191, 36, 0.1) 9deg 12deg
+                  )`,
+                  animation: 'spin 20s linear infinite'
+                }}></div>
               </div>
               
-              {/* Category Badge */}
-              <div className="absolute top-3 left-3 md:top-4 md:left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium text-gray-700 shadow-lg">
-                {product.category}
+              {/* Glowing center circle */}
+              <div className="absolute inset-16 rounded-full bg-gradient-to-br from-orange-300/20 via-amber-200/20 to-orange-400/20 blur-3xl animate-pulse" style={{ animationDuration: '3s' }}></div>
+              
+              {/* Additional radial glow */}
+              <div className="absolute inset-0 rounded-full bg-radial-gradient from-orange-400/10 via-transparent to-transparent"></div>
+              
+              {/* Product Image */}
+              <div className="relative w-full h-full p-8 md:p-12 z-10">
+                <div className="relative w-full h-full transition-transform duration-500 hover:scale-105">
+                  <Image 
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    className="object-contain"
+                    style={{
+                      filter: 'drop-shadow(0 20px 40px rgba(249, 115, 22, 0.3)) drop-shadow(0 10px 25px rgba(251, 191, 36, 0.25))'
+                    }}
+                    sizes="(max-width: 768px) 90vw, 45vw"
+                    priority
+                  />
+                </div>
               </div>
             </div>
           </div>
