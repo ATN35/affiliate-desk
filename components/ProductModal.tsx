@@ -60,15 +60,15 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         <div className="grid md:grid-cols-2 gap-0 overflow-hidden h-full">
           {/* Image Section - Padding top augmenté pour badge et bouton X */}
           <div className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50/50 p-3 pt-20 sm:pt-6 md:p-10 flex items-center justify-center overflow-hidden h-[47vh] sm:min-h-[450px] md:min-h-[500px] border-b sm:border-b-0 sm:border-r border-gray-100">
-            {/* Category Badge - Plus bas pour être visible */}
-            <div className="absolute top-10 left-3 sm:top-4 sm:left-4 md:top-6 md:left-6 bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-1.5 rounded-lg text-xs sm:text-xs font-semibold uppercase tracking-wide shadow-lg z-10">
+            {/* Category Badge - Masqué sur mobile */}
+            <div className="hidden sm:block absolute top-4 left-4 md:top-6 md:left-6 bg-orange-500 text-white px-4 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wide shadow-lg z-10">
               {product.category}
             </div>
 
-            {/* Close Button - Aligné avec le badge */}
+            {/* Close Button - Abaissé sur mobile */}
             <button
               onClick={onClose}
-              className="absolute top-10 right-3 sm:hidden z-50 w-10 h-10 rounded-full bg-white hover:bg-gray-200 flex items-center justify-center transition-colors group shadow-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 cursor-pointer"
+              className="absolute top-12 right-3 sm:hidden z-50 w-10 h-10 rounded-full bg-white hover:bg-gray-200 flex items-center justify-center transition-colors group shadow-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 cursor-pointer"
               aria-label="Fermer la fenêtre de détails du produit"
             >
               <svg 
