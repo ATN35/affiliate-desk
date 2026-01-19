@@ -433,7 +433,7 @@ export default function DeskScene() {
         </div>
 
         {/* Product Count Indicator */}
-        <div className="-mt-2 sm:mt-6 md:mt-8 mb-8 sm:mb-0 flex items-center gap-2 sm:gap-2.5 md:gap-3 bg-white/90 backdrop-blur-md px-4 sm:px-5 md:px-7 py-2.5 sm:py-3 md:py-3.5 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.08)] ring-1 ring-black/5 hover:shadow-[0_6px_30px_rgba(0,0,0,0.12)] transition-shadow duration-300">
+        <div className="mt-4 sm:mt-6 md:mt-8 mb-8 sm:mb-0 flex items-center gap-2 sm:gap-2.5 md:gap-3 bg-white/90 backdrop-blur-md px-4 sm:px-5 md:px-7 py-2.5 sm:py-3 md:py-3.5 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.08)] ring-1 ring-black/5 hover:shadow-[0_6px_30px_rgba(0,0,0,0.12)] transition-shadow duration-300">
           <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3">
             <div className="flex gap-0.5 sm:gap-1">
               {[...Array(3)].map((_, i) => (

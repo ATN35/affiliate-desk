@@ -41,10 +41,10 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         onClick={(e) => e.stopPropagation()}
         role="document"
       >
-        {/* Close Button - Sticky on Mobile */}
+        {/* Close Button - Fixed on Mobile */}
         <button
           onClick={onClose}
-          className="sticky sm:absolute top-0 right-0 sm:top-3 sm:right-3 md:top-4 md:right-4 z-20 w-12 h-12 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-none sm:rounded-full bg-white sm:bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors group shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 cursor-pointer"
+          className="fixed sm:absolute top-3 right-3 sm:top-3 sm:right-3 md:top-4 md:right-4 z-50 w-10 h-10 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-white hover:bg-gray-200 flex items-center justify-center transition-colors group shadow-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 cursor-pointer"
           aria-label="Fermer la fenêtre de détails du produit"
         >
           <svg 
@@ -57,16 +57,16 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           </svg>
         </button>
 
-        <div className="grid md:grid-cols-2 gap-0 overflow-y-auto">
-          {/* Image Section - Modern Clean Design */}
-          <div className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50/50 p-4 pt-16 sm:pt-6 md:p-10 flex items-center justify-center overflow-hidden min-h-[400px] sm:min-h-[450px] md:min-h-[500px]">
+        <div className="grid md:grid-cols-2 gap-0 overflow-hidden h-full">
+          {/* Image Section - Compact on Mobile */}
+          <div className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50/50 p-3 pt-12 sm:pt-6 md:p-10 flex items-center justify-center overflow-hidden h-[35vh] sm:min-h-[450px] md:min-h-[500px]">
             {/* Category Badge - Always at top, never overlapping image */}
-            <div className="absolute top-3 left-1/2 -translate-x-1/2 sm:top-4 sm:left-4 sm:translate-x-0 md:top-6 md:left-6 bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wide shadow-lg z-10">
+            <div className="absolute top-2 left-1/2 -translate-x-1/2 sm:top-4 sm:left-4 sm:translate-x-0 md:top-6 md:left-6 bg-orange-500 text-white px-2.5 py-0.5 sm:px-4 sm:py-1.5 rounded-lg text-[10px] sm:text-xs font-semibold uppercase tracking-wide shadow-lg z-10">
               {product.category}
             </div>
             
             {/* Product Image with Sunburst Effect */}
-            <div className="relative w-full max-w-md aspect-square flex items-center justify-center">
+            <div className="relative w-full max-w-[200px] sm:max-w-md aspect-square flex items-center justify-center">
               {/* Sunburst rays background - Rounded */}
               <div className="absolute inset-0 flex items-center justify-center rounded-full overflow-hidden">
                 <div className="absolute w-full h-full opacity-30 rounded-full" style={{
@@ -82,13 +82,13 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               </div>
               
               {/* Glowing center circle */}
-              <div className="absolute inset-16 rounded-full bg-gradient-to-br from-orange-300/20 via-amber-200/20 to-orange-400/20 blur-3xl animate-pulse" style={{ animationDuration: '3s' }}></div>
+              <div className="absolute inset-8 sm:inset-16 rounded-full bg-gradient-to-br from-orange-300/20 via-amber-200/20 to-orange-400/20 blur-3xl animate-pulse" style={{ animationDuration: '3s' }}></div>
               
               {/* Additional radial glow */}
               <div className="absolute inset-0 rounded-full bg-radial-gradient from-orange-400/10 via-transparent to-transparent"></div>
               
               {/* Product Image */}
-              <div className="relative w-full h-full p-8 md:p-12 z-10">
+              <div className="relative w-full h-full p-4 sm:p-8 md:p-12 z-10">
                 <div className="relative w-full h-full transition-transform duration-500 hover:scale-105">
                   <Image 
                     src={product.image}
@@ -106,25 +106,25 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             </div>
           </div>
 
-          {/* Content Section */}
-          <div className="p-6 md:p-8 lg:p-12 flex flex-col justify-between">
+          {/* Content Section - Compact on Mobile */}
+          <div className="p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-between h-[65vh] sm:h-auto overflow-y-auto sm:overflow-visible">
             <div>
               <h2 
                 id="modal-title" 
-                className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 md:mb-4"
+                className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 sm:mb-3 md:mb-4 line-clamp-2"
               >
                 {product.name}
               </h2>
               
               <p 
                 id="modal-description" 
-                className="text-base md:text-lg text-gray-600 mb-5 md:mb-6 leading-relaxed"
+                className="text-sm sm:text-base md:text-lg text-gray-600 mb-3 sm:mb-5 md:mb-6 leading-snug sm:leading-relaxed line-clamp-3 sm:line-clamp-none"
               >
                 {product.description}
               </p>
 
-              {/* Features List */}
-              <div className="mb-6 md:mb-8 space-y-2 md:space-y-3" role="list" aria-label="Points forts du produit">
+              {/* Features List - Hidden on small mobile */}
+              <div className="hidden sm:block mb-6 md:mb-8 space-y-2 md:space-y-3" role="list" aria-label="Points forts du produit">
                 <h3 className="font-semibold text-gray-900 mb-2 md:mb-3">Points forts :</h3>
                 <div className="flex items-start gap-2 md:gap-3" role="listitem">
                   <span className="text-orange-500 mt-1" aria-hidden="true">✓</span>
@@ -141,13 +141,13 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               </div>
             </div>
 
-            {/* CTA */}
-            <div>
+            {/* CTA - Compact on Mobile */}
+            <div className="mt-auto">
               <a
                 href={product.affiliateLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-linear-to-r from-orange-500 to-amber-500 text-white text-center py-3 md:py-4 rounded-xl md:rounded-2xl font-semibold text-base md:text-lg hover:shadow-xl hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-orange-500 focus:ring-offset-2"
+                className="block w-full bg-linear-to-r from-orange-500 to-amber-500 text-white text-center py-2.5 sm:py-3 md:py-4 rounded-lg sm:rounded-xl md:rounded-2xl font-semibold text-sm sm:text-base md:text-lg hover:shadow-xl hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-orange-500 focus:ring-offset-2"
                 aria-label={`Voir ${product.name} sur Amazon - Nouvelle fenêtre`}
               >
                 Voir le prix sur Amazon →
@@ -155,7 +155,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
               <button 
                 onClick={onClose}
-                className="text-sm text-gray-600 text-center mt-3 md:mt-4 font-medium hover:text-orange-500 transition-colors w-full cursor-pointer" 
+                className="text-xs sm:text-sm text-gray-600 text-center mt-2 sm:mt-3 md:mt-4 font-medium hover:text-orange-500 transition-colors w-full cursor-pointer" 
                 aria-label="Retour à la page d'accueil"
               >
                 ← Retour à l&apos;accueil
