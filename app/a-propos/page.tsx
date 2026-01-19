@@ -159,6 +159,15 @@ export default function APropos() {
             Découvrir les produits
             <span className="text-xl">→</span>
           </Link>
+          
+          <div className="mt-8 pt-6 border-t border-gray-200/50">
+            <Link 
+              href="/politique-confidentialite" 
+              className="inline-flex items-center text-gray-600 hover:text-orange-500 text-sm transition-colors"
+            >
+              Voir aussi : Politique de confidentialité →
+            </Link>
+          </div>
         </div>
       </main>
 
