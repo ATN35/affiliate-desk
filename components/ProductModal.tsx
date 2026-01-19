@@ -29,7 +29,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center p-0 sm:p-3 md:p-4 bg-black/60 backdrop-blur-sm animate-fade-in overflow-y-auto"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-3 md:p-4 bg-black/60 backdrop-blur-sm animate-fade-in overflow-y-auto"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -37,18 +37,18 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
       aria-describedby="modal-description"
     >
       <div 
-        className="relative bg-white rounded-2xl md:rounded-3xl shadow-2xl max-w-4xl w-full overflow-hidden animate-scale-in max-h-[95vh] sm:max-h-[90vh] my-4 flex flex-col"
+        className="relative bg-white rounded-t-2xl sm:rounded-2xl md:rounded-3xl shadow-2xl max-w-4xl w-full overflow-hidden animate-scale-in max-h-[95vh] sm:max-h-[90vh] my-0 sm:my-4 flex flex-col"
         onClick={(e) => e.stopPropagation()}
         role="document"
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 z-10 w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-white/90 sm:bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors group shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 cursor-pointer"
+          className="absolute top-3 right-3 sm:top-3 sm:right-3 md:top-4 md:right-4 z-20 w-9 h-9 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-white sm:bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors group shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 cursor-pointer"
           aria-label="Fermer la fenêtre de détails du produit"
         >
           <svg 
-            className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-gray-600 group-hover:text-gray-900" 
+            className="w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 text-gray-600 group-hover:text-gray-900" 
             fill="none" 
             viewBox="0 0 24 24" 
             stroke="currentColor"
@@ -59,9 +59,9 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
         <div className="grid md:grid-cols-2 gap-0 overflow-y-auto">
           {/* Image Section - Modern Clean Design */}
-          <div className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50/50 p-6 md:p-10 flex items-center justify-center overflow-hidden min-h-[400px] sm:min-h-[450px] md:min-h-[500px]">
+          <div className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50/50 p-6 pt-12 sm:pt-6 md:p-10 flex items-center justify-center overflow-hidden min-h-[400px] sm:min-h-[450px] md:min-h-[500px]">
             {/* Category Badge - Adjusted for mobile */}
-            <div className="absolute top-2 left-2 sm:top-4 sm:left-4 md:top-6 md:left-6 bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wide shadow-lg z-10">
+            <div className="absolute top-14 left-4 sm:top-4 sm:left-4 md:top-6 md:left-6 bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wide shadow-lg z-10">
               {product.category}
             </div>
             
