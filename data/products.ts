@@ -30,7 +30,7 @@ export const products: Product[] = [
     name: 'Casque Audio',
     description: 'HyperX Cloud III – Casque de Gaming Filaire, PC, PS5, Xbox Series X|S, DTS, Mousse à mémoire de Forme, Microphone au Son cristallin de 10 mm, avec Suppression du Bruit, USB-C, USB-A, 3.5mm.',
     category: 'Audio',
-    affiliateLink: 'https://amzn.to/example-headphones',
+    affiliateLink: 'https://amzn.to/4pJDNoV',
     image: '/Casque-de-Gaming.jpg',
     position: { x: 18, y: 75 },
     positionMobile: { x: 14, y: 56 },
